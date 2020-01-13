@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box; 
+}
+
+
+
+body {
+    background-color: #ffffff;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 32px;
+    line-height: 1.5;
+    color: red; 
+
+    width: 100%; 
+    height: 100%; 
+    overflow: hidden;
+
+}
+
+header {
+    position: fixed; 
+    top: 30px; 
+    left: 30px; 
+    z-index: 1;
+}
+
+img {
+    position: absolute; 
+    top: 500px; 
+    left: 400px;
+    transform: translate(-50%, -50%) scale(0.5);
+}
