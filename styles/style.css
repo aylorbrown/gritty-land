@@ -35,4 +35,9 @@ img {
     left: 400px;
     transform: translate(-50%, -50%) scale(0.5);
     animation: fadein 0.5s;
+    cursor: pointer;
 }
+
+/* img:hover {
+    z-index: 1;
+} */

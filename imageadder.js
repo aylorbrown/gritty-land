@@ -29,9 +29,20 @@ function placeImage (x, y) {
 
 // on click! 
 
-document.addEventListener("click", (event) => {
+// document.addEventListener("click", (event) => {
+//     event.preventDefault();
+//     placeImage(event.pageX, event.pageY);
+// })
+
+
+// mouse over ?
+let mouse = 0; 
+document.addEventListener("mousemove", (event) => {
     event.preventDefault();
-    placeImage(event.pageX, event.pageY);
+    mouse += 1; 
+    if (mouse % 20 == 0) {
+        placeImage(event.pageX, event.pageY);
+    }
 })
 
 // mobile 
