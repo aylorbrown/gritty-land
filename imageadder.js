@@ -1,7 +1,7 @@
 const images = [
     "images/gritty-tina.png", "images/gritty-wooder.png", "images/naked-gritty.png", 
     "images/gritty-rocky.png", "images/gritty-profile.png", "images/nightmare-gritty.png",
-    "images/gritty-profile1.png", "images/gritty-hockey.png", "images/gritty-nightmare2.png"
+    "images/gritty-profile1.png", "images/gritty-hockey.png"
 ]
 
 let i = 0

@@ -15,6 +15,11 @@ body {
 
 }
 
+h1 {
+    position: absolute; 
+    z-index: 999999;
+}
+
 header {
     position: fixed; 
     top: 30px; 
