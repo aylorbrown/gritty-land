@@ -2,8 +2,6 @@
     box-sizing: border-box; 
 }
 
-
-
 body {
     background-color: #ffffff;
     font-family: 'Work Sans', sans-serif;
@@ -24,9 +22,17 @@ header {
     z-index: 1;
 }
 
+@keyframes fadein { 
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+
+}
+
+
 img {
     position: absolute; 
     top: 500px; 
     left: 400px;
     transform: translate(-50%, -50%) scale(0.5);
+    animation: fadein 0.5s;
 }

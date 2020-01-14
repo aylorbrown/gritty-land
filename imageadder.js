@@ -1,5 +1,6 @@
 const images = [
-    "images/gritty-tina.png", "images/gritty-wooder.png", "images/naked-gritty.png"
+    "images/gritty-tina.png", "images/gritty-wooder.png", "images/naked-gritty.png", 
+    "images/gritty-rocky.png", "images/gritty-profile.png"
 ]
 
 let i = 0
@@ -11,14 +12,30 @@ function placeImage (x, y) {
     img.setAttribute("src", nextImage);
     img.style.left = x + "px";
     img.style.top = y + "px";
+    // img.style.transform = "translate(-50%, -50%) scale(0.5) rotate(" + Math.random() * 20 - 10) + "deg)";
 
     document.body.appendChild(img);
 
+    i += 1; 
 
-
-
+    if( i >= images.length) {
+        i = 0;
+    }
 };
 
-placeImage(500, 400);
-placeImage(400, 500);
-placeImage(600, 300);
+// placeImage(500, 400);
+// placeImage(400, 500);
+// placeImage(600, 300);
+
+// on click! 
+
+document.addEventListener("click", (event) => {
+    event.preventDefault();
+    placeImage(event.pageX, event.pageY);
+})
+
+// mobile 
+
+document.addEventListener("touchend", () => {
+    
+})
