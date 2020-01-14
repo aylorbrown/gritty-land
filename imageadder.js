@@ -1,6 +1,7 @@
 const images = [
     "images/gritty-tina.png", "images/gritty-wooder.png", "images/naked-gritty.png", 
-    "images/gritty-rocky.png", "images/gritty-profile.png"
+    "images/gritty-rocky.png", "images/gritty-profile.png", "images/nightmare-gritty.png",
+    "images/gritty-profile1.png", "images/gritty-hockey.png", "images/gritty-nightmare2.png"
 ]
 
 let i = 0
@@ -29,24 +30,23 @@ function placeImage (x, y) {
 
 // on click! 
 
-// document.addEventListener("click", (event) => {
-//     event.preventDefault();
-//     placeImage(event.pageX, event.pageY);
-// })
-
-
-// mouse over ?
-let mouse = 0; 
-document.addEventListener("mousemove", (event) => {
+document.addEventListener("click", (event) => {
     event.preventDefault();
-    mouse += 1; 
-    if (mouse % 20 == 0) {
-        placeImage(event.pageX, event.pageY);
-    }
+    placeImage(event.pageX, event.pageY);
 })
 
-// mobile 
 
+// mouse over 
+// let mouse = 0; 
+// document.addEventListener("mousemove", (event) => {
+//     event.preventDefault();
+//     mouse += 1; 
+//     if (mouse % 20 == 0) {
+//         placeImage(event.pageX, event.pageY);
+//     }
+// })
+
+// mobile 
 document.addEventListener("touchend", () => {
     
 })
