@@ -38,7 +38,7 @@ img {
     position: absolute; 
     top: 500px; 
     left: 400px;
-    transform: translate(-50%, -50%) scale(0.5);
+    transform: translate(-50%, -50%) scale(0.75);
     animation: fadein 0.5s;
     cursor: pointer;
 }
@@ -47,6 +47,16 @@ img:hover {
     z-index: 1;
 }
 
-.custom {
-    cursor: url(images/images/naked-gritty.png), auto;
-  }
+
+
+
+@media screen and (max-width: 414px) {
+
+    img {
+        transform: translate(-50%, -50%) scale(0.25);
+    }
+
+    h1 { 
+        font-size: 24px;
+    }
+}
